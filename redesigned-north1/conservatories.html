@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
     <title>Conservatories | Northants Home Improvements</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-responsive.css">
 </head>
 <body>
     <!-- Top Bar -->
@@ -41,13 +45,23 @@
             <button class="mobile-menu-btn" onclick="toggleMobileMenu()"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
         </div>
         <div class="mobile-menu" id="mobileMenu">
-            <a href="windows-doors.html">Windows & Doors</a>
+            <div class="mobile-menu-item">
+                <a href="windows-doors.html" class="mobile-menu-link">Windows & Doors</a>
+                <div class="mobile-submenu">
+                    <a href="windows-doors.html#upvc-windows">uPVC Windows</a>
+                    <a href="windows-doors.html#composite-doors">Composite Doors</a>
+                    <a href="windows-doors.html#upvc-doors">uPVC Doors</a>
+                    <a href="windows-doors.html#french-doors">French & Patio Doors</a>
+                    <a href="windows-doors.html#sliding-doors">Sliding Doors</a>
+                </div>
+            </div>
             <a href="conservatories.html">Conservatories</a>
             <a href="roofline.html">Roofline</a>
             <a href="extensions.html">Extensions</a>
             <a href="home-improvements.html">Home Improvements</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
+            <a href="contact.html" class="btn btn-primary" style="margin-top: 20px;">Request a Quote</a>
         </div>
     </header>
 
@@ -201,6 +215,6 @@
             </div>
         </div>
     </footer>
-    <script>function toggleMobileMenu(){document.getElementById('mobileMenu').classList.toggle('active');}</script>
+    <script src="mobile-enhancements.js" defer></script>
 </body>
 </html>

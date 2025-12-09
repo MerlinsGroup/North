@@ -5,7 +5,11 @@
       "Bash(explorer:*)",
       "Bash(dir \"c:\\Users\\MSI-PC\\Documents\\GitHub\\North\\redesigned-north1\")",
       "Bash(for file in c:/Users/MSI-PC/Documents/GitHub/North/redesigned-north1/*.html)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(for file in about.html extensions.html windows-doors.html conservatories.html roofline.html home-improvements.html contact.html)",
+      "Bash(do echo \"Checking $file:\")",
+      "Bash(python:*)",
+      "Bash(del update-pages.py)"
     ],
     "deny": [],
     "ask": []
