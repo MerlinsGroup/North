@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
     <title>Northants Home Improvements | Windows, Doors & Extensions in Northamptonshire</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles-responsive.css">
 </head>
 <body>
     <!-- Top Bar -->
@@ -61,14 +65,23 @@
 
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
-        <a href="windows-doors.html">Windows & Doors</a>
+        <div class="mobile-menu-item">
+            <a href="windows-doors.html" class="mobile-menu-link">Windows & Doors</a>
+            <div class="mobile-submenu">
+                <a href="windows-doors.html#upvc-windows">uPVC Windows</a>
+                <a href="windows-doors.html#composite-doors">Composite Doors</a>
+                <a href="windows-doors.html#upvc-doors">uPVC Doors</a>
+                <a href="windows-doors.html#french-doors">French & Patio Doors</a>
+                <a href="windows-doors.html#sliding-doors">Sliding Doors</a>
+            </div>
+        </div>
         <a href="conservatories.html">Conservatories</a>
         <a href="roofline.html">Roofline</a>
         <a href="extensions.html">Extensions</a>
         <a href="home-improvements.html">Home Improvements</a>
-        <a href="about.html">About Us</a>
+        <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
-        <a href="contact.html" style="background: var(--primary); color: white; margin: 15px; border-radius: var(--radius); text-align: center;">Get Free Quote</a>
+        <a href="contact.html" class="btn btn-primary" style="margin-top: 20px;">Request a Quote</a>
     </div>
 
     <!-- Hero Section with Clear Background Image -->
@@ -79,7 +92,7 @@
                 <div class="container">
                     <div class="hero-content-centered">
                         <h1>Transform Your Home with Professional <span class="text-accent">Windows, Doors & Extensions</span></h1>
-                        <p>Trusted across Northamptonshire for quality <span class="text-accent">installations</span> and exceptional <span class="text-accent">service</span></p>
+                        <p>Trusted across Northamptonshire for quality installations and exceptional service</p>
                         <div class="hero-buttons">
                             <a href="contact.html" class="btn btn-primary btn-large">
                                 Get Your Free Quote
@@ -393,11 +406,6 @@
         </div>
     </footer>
 
-    <script>
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('active');
-        }
-    </script>
+    <script src="mobile-enhancements.js" defer></script>
 </body>
 </html>

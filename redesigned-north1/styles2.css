@@ -171,6 +171,12 @@ nav a:hover {
     padding: 8px 20px;
 }
 
+/* Text Utilities */
+.text-accent {
+    color: var(--red-accent);
+    font-weight: 600;
+}
+
 .btn {
     display: inline-flex;
     align-items: center;
