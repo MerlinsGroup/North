@@ -111,7 +111,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 90px;
+    height: 75px;
     position: relative;
 }
 
@@ -119,13 +119,16 @@ header {
 .logo {
     text-decoration: none;
     display: inline-block;
+    height: 45px;
+    flex-shrink: 0;
 }
 
 .logo img {
-    height: 50px;
+    height: 100%;
     width: auto;
     display: block;
     object-fit: contain;
+    max-height: 45px;
 }
 
 /* Legacy logo text styles (keeping for backwards compatibility) */
@@ -1622,11 +1625,13 @@ footer {
 
 .footer-brand .logo {
     margin-bottom: 20px;
+    height: 40px;
 }
 
 .footer-brand .logo img {
-    height: 45px;
+    height: 100%;
     width: auto;
+    max-height: 40px;
     filter: brightness(0) invert(1); /* Makes logo white for dark footer */
 }
 
@@ -1786,7 +1791,7 @@ footer {
     /* Header adjustments for tablets - with hamburger menu */
     .header-content {
         padding: 0 30px;
-        height: 80px;
+        height: 70px;
     }
 
     /* Hide desktop navigation on tablets */
@@ -2037,8 +2042,12 @@ footer {
         display: none;
     }
     .header-content {
-        height: 70px;
+        height: 65px;
         padding: 0 20px;
+    }
+
+    .logo {
+        height: 40px;
     }
     .header-content > .btn-primary {
         display: none;
