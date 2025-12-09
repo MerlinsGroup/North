@@ -744,7 +744,7 @@ select {
 
     button:focus,
     .btn:focus {
-        box-shadow: 0 0 0 3px rgba(212, 165, 116, 0.5);
+        box-shadow: 0 0 0 3px rgba(165, 67, 86, 0.5);
     }
 }
 

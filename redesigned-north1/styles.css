@@ -2415,7 +2415,7 @@ footer {
 .service-with-image:hover {
     border-color: var(--accent);
     transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(212, 165, 116, 0.25);
+    box-shadow: 0 15px 40px rgba(165, 67, 86, 0.25);
 }
 
 .service-with-image:hover h3 {
