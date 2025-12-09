@@ -9,7 +9,8 @@
       "Bash(for file in about.html extensions.html windows-doors.html conservatories.html roofline.html home-improvements.html contact.html)",
       "Bash(do echo \"Checking $file:\")",
       "Bash(python:*)",
-      "Bash(del update-pages.py)"
+      "Bash(del update-pages.py)",
+      "Bash(dir:*)"
     ],
     "deny": [],
     "ask": []

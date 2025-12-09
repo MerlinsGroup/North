@@ -117,16 +117,18 @@ header {
 
 
 .logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--primary);
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    line-height: 1.1;
+    display: inline-block;
 }
 
+.logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* Legacy logo text styles (keeping for backwards compatibility) */
 .logo span {
     font-family: 'DM Sans', sans-serif;
     font-size: 11px;
@@ -1619,8 +1621,13 @@ footer {
 }
 
 .footer-brand .logo {
-    color: white;
     margin-bottom: 20px;
+}
+
+.footer-brand .logo img {
+    height: 45px;
+    width: auto;
+    filter: brightness(0) invert(1); /* Makes logo white for dark footer */
 }
 
 .footer-brand .logo span {

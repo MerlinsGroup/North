@@ -230,12 +230,8 @@ select {
         height: 65px;
     }
 
-    .logo {
-        font-size: 18px;
-    }
-
-    .logo span {
-        font-size: 9px;
+    .logo img {
+        height: 40px;
     }
 
     .hero h1 {
@@ -439,8 +435,22 @@ select {
 }
 
 /* ==========================================
-   RESPONSIVE FORMS
+   RESPONSIVE FORMS & CTA QUOTE SECTION FIX
    ========================================== */
+
+/* Fix CTA Quote Forms on all screen sizes */
+@media (max-width: 1200px) {
+    .cta-section .cta-content {
+        grid-template-columns: 1fr !important;
+        gap: 40px;
+    }
+
+    .cta-section .cta-form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 768px) {
 
     /* Ensure all form inputs are touch-friendly */
@@ -450,27 +460,40 @@ select {
     input[type="number"],
     textarea,
     select {
-        font-size: 16px; /* Prevents zoom on iOS */
-        padding: 16px;
+        font-size: 16px !important; /* Prevents zoom on iOS */
+        padding: 14px 16px !important;
         border-radius: 8px;
-        width: 100%;
+        width: 100% !important;
         -webkit-appearance: none;
         appearance: none;
+        box-sizing: border-box;
+        margin-bottom: 12px;
+        border: 2px solid #e8e4df !important;
     }
 
     /* Stack form rows on mobile */
     .form-row {
-        grid-template-columns: 1fr;
-        gap: 15px;
+        grid-template-columns: 1fr !important;
+        gap: 0;
+    }
+
+    .form-row input {
+        width: 100% !important;
+        margin-bottom: 12px;
     }
 
     /* Full-width submit buttons */
     .hero-form .btn,
     .contact-form .btn,
     .cta-form .btn {
-        width: 100%;
-        padding: 16px;
-        font-size: 16px;
+        width: 100% !important;
+        padding: 16px !important;
+        font-size: 16px !important;
+        justify-content: center;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
     }
 
     /* Better select dropdowns */
@@ -479,7 +502,104 @@ select {
         background-repeat: no-repeat;
         background-position: right 16px center;
         background-size: 20px;
-        padding-right: 48px;
+        padding-right: 48px !important;
+    }
+
+    /* CTA Section Quote Form Specific Fixes */
+    .cta-section {
+        padding: 60px 0;
+    }
+
+    .cta-section .container {
+        padding: 0 20px;
+    }
+
+    .cta-section .cta-content {
+        background: white;
+        border-radius: 16px;
+        padding: 40px 20px !important;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .cta-section .cta-text {
+        text-align: center;
+    }
+
+    .cta-section .cta-text h2 {
+        font-size: 26px;
+        margin-bottom: 10px;
+        line-height: 1.2;
+    }
+
+    .cta-section .cta-text p {
+        font-size: 15px;
+        color: #6a6a6a;
+    }
+
+    .cta-section .cta-form {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .cta-section .cta-form input,
+    .cta-section .cta-form textarea,
+    .cta-section .cta-form select {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        margin-bottom: 12px;
+    }
+
+    .cta-section .cta-form textarea {
+        min-height: 100px;
+        resize: vertical;
+    }
+
+    .cta-section .cta-form .btn {
+        margin-top: 8px;
+        width: 100% !important;
+        min-height: 50px;
+    }
+
+    /* Fix placeholder text */
+    .cta-form input::placeholder,
+    .cta-form textarea::placeholder {
+        color: #999;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-section .cta-content {
+        padding: 30px 15px !important;
+        border-radius: 12px;
+    }
+
+    .cta-section .cta-text h2 {
+        font-size: 22px;
+    }
+
+    .cta-section .cta-text p {
+        font-size: 14px;
+    }
+
+    .cta-form input,
+    .cta-form textarea,
+    .cta-form select {
+        padding: 12px 14px !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .cta-section .cta-content {
+        padding: 25px 12px !important;
+    }
+
+    .cta-section .cta-text h2 {
+        font-size: 20px;
     }
 }
 
