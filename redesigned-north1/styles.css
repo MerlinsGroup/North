@@ -1848,3 +1848,431 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* ==========================================
+   IMAGE-RICH SECTIONS
+   ========================================== */
+
+/* Hero with Background Image */
+.hero-with-image {
+    position: relative;
+    min-height: 700px;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(26, 77, 92, 0.75) 0%, rgba(15, 53, 64, 0.70) 100%);
+}
+
+/* Ensure hero content is above background */
+.hero-with-image .hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-with-image .hero-text {
+    color: white;
+}
+
+.hero-with-image h1 {
+    color: white;
+}
+
+.hero-with-image p {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+/* Image Showcase Section */
+.image-showcase {
+    padding: 0;
+    background: var(--primary-dark);
+}
+
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+}
+
+.showcase-item {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+}
+
+.showcase-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.showcase-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    background: linear-gradient(to top, rgba(26, 77, 92, 0.95), transparent);
+    color: white;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.showcase-item:hover img {
+    transform: scale(1.1);
+}
+
+.showcase-item:hover .showcase-overlay {
+    transform: translateY(0);
+}
+
+.showcase-overlay h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.showcase-overlay p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Service Cards with Images */
+.service-with-image {
+    overflow: hidden;
+}
+
+.service-with-image .service-image {
+    position: relative;
+    height: 200px;
+    margin: -30px -30px 25px;
+    overflow: hidden;
+}
+
+.service-with-image .service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.service-with-image:hover .service-image img {
+    transform: scale(1.05);
+}
+
+.service-with-image .service-icon {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-md);
+}
+
+.service-with-image .service-content {
+    padding: 0;
+}
+
+/* Projects Gallery */
+.projects-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.projects-gallery .project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-gallery .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.projects-gallery .project-image {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    background: none;
+}
+
+.projects-gallery .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.projects-gallery .project-card:hover .project-image img {
+    transform: scale(1.1);
+}
+
+.projects-gallery .project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(26, 77, 92, 0.95) 0%, transparent 60%);
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.projects-gallery .project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-category {
+    display: inline-block;
+    padding: 5px 12px;
+    background: var(--accent);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+.project-overlay h4 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.project-overlay p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.project-link {
+    color: white;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: gap 0.3s ease;
+}
+
+.project-link:hover {
+    gap: 12px;
+}
+
+.projects-cta {
+    text-align: center;
+}
+
+/* Testimonials with Images */
+.testimonials-section {
+    background: var(--cream);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.testimonial-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.testimonial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial-content {
+    padding: 30px;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+    color: var(--accent);
+}
+
+.testimonial-content p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-medium);
+    margin-bottom: 20px;
+}
+
+.testimonial-author strong {
+    display: block;
+    font-size: 16px;
+    color: var(--text-dark);
+    margin-bottom: 3px;
+}
+
+.testimonial-author span {
+    font-size: 14px;
+    color: var(--primary);
+}
+
+/* Image Banner */
+.image-banner {
+    position: relative;
+    padding: 0;
+    height: 500px;
+    overflow: hidden;
+}
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(26, 77, 92, 0.9) 0%, rgba(15, 53, 64, 0.85) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-content {
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    padding: 0 40px;
+}
+
+.banner-content h2 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.banner-stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+.banner-stats .stat {
+    text-align: center;
+}
+
+.banner-stats .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.banner-stats .stat-label {
+    font-size: 14px;
+    color: white;
+    opacity: 0.9;
+}
+
+/* Responsive Updates for New Sections */
+@media (max-width: 992px) {
+    .showcase-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .projects-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    .banner-content h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-with-image {
+        min-height: auto;
+    }
+    .showcase-grid {
+        grid-template-columns: 1fr;
+    }
+    .projects-gallery {
+        grid-template-columns: 1fr;
+    }
+    .service-with-image .service-image {
+        height: 180px;
+    }
+    .banner-stats {
+        gap: 30px;
+    }
+    .banner-stats .stat-number {
+        font-size: 32px;
+    }
+    .image-banner {
+        height: 400px;
+    }
+}

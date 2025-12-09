@@ -38,8 +38,12 @@
         </div>
     </header>
 
-    <section class="page-hero">
-        <div class="container">
+    <section class="page-hero hero-with-image">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&h=600&fit=crop" alt="Home Improvements">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container" style="position: relative; z-index: 1;">
             <div class="breadcrumb">
                 <a href="index.html">Home</a>
                 <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
@@ -64,8 +68,8 @@
                         <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Single point of responsibility for aftercare</li>
                     </ul>
                 </div>
-                <div class="content-image">
-                    <svg width="100" height="100" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <div class="content-image" style="overflow: hidden; border-radius: var(--radius);">
+                    <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=600&h=400&fit=crop" alt="Modern Home Improvements" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -104,6 +108,40 @@
         </div>
     </section>
 
+    <!-- Project Showcase Gallery -->
+    <section class="image-showcase">
+        <div class="showcase-grid">
+            <div class="showcase-item">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&h=600&fit=crop" alt="Glass Partition">
+                <div class="showcase-overlay">
+                    <h3>Glass Partitions</h3>
+                    <p>Create open, light-filled spaces</p>
+                </div>
+            </div>
+            <div class="showcase-item">
+                <img src="https://images.unsplash.com/photo-1556909114-44e3e70034e2?w=800&h=600&fit=crop" alt="Bespoke Cabinetry">
+                <div class="showcase-overlay">
+                    <h3>Custom Cabinetry</h3>
+                    <p>Tailored storage solutions</p>
+                </div>
+            </div>
+            <div class="showcase-item">
+                <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&h=600&fit=crop" alt="Modern Kitchen">
+                <div class="showcase-overlay">
+                    <h3>Kitchen Design</h3>
+                    <p>Contemporary living spaces</p>
+                </div>
+            </div>
+            <div class="showcase-item">
+                <img src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=800&h=600&fit=crop" alt="Feature Wall">
+                <div class="showcase-overlay">
+                    <h3>Feature Walls</h3>
+                    <p>Statement interior elements</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="content-section">
         <div class="container">
             <div class="content-grid">
@@ -117,8 +155,8 @@
                         <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> RAL colours and dual-colour options</li>
                     </ul>
                 </div>
-                <div class="content-image" style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);">
-                    <svg width="100" height="100" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="8" y1="3" x2="8" y2="21"/><line x1="14" y1="3" x2="14" y2="21"/></svg>
+                <div class="content-image" style="overflow: hidden; border-radius: var(--radius);">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop" alt="Aluminium Bifold Doors" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -137,8 +175,8 @@
                         <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> LED lighting features</li>
                     </ul>
                 </div>
-                <div class="content-image" style="background: linear-gradient(135deg, #6a5a8a 0%, #4d3d6b 100%);">
-                    <svg width="100" height="100" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M17 2l-5 5-5-5"/></svg>
+                <div class="content-image" style="overflow: hidden; border-radius: var(--radius);">
+                    <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=600&h=400&fit=crop" alt="Media Wall Interior" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
             </div>
         </div>
