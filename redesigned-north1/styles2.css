@@ -745,25 +745,49 @@ footer {
 
 /* iPad Air and Tablet Specific Styles (768px - 1024px) */
 @media (max-width: 1024px) and (min-width: 769px) {
-    /* Header adjustments for tablets */
+    /* Header adjustments for tablets - with hamburger menu */
     .header-content {
         padding: 0 30px;
         height: 80px;
     }
 
+    /* Hide desktop navigation on tablets */
     nav {
-        gap: 4px;
+        display: none;
     }
 
-    nav > a,
-    .nav-dropdown-trigger {
-        padding: 8px 12px;
-        font-size: 14px;
+    /* Show mobile menu button on tablets */
+    .mobile-menu-btn {
+        display: block;
     }
 
+    /* Hide the desktop quote button on tablets */
     .header-content > .btn-primary {
-        padding: 12px 20px;
-        font-size: 14px;
+        display: none;
+    }
+
+    /* Mobile menu styles for tablets */
+    .mobile-menu {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: white;
+        box-shadow: var(--shadow-lg);
+        z-index: 999;
+        max-height: calc(100vh - 80px);
+        overflow-y: auto;
+    }
+
+    .mobile-menu.active {
+        display: block;
+    }
+
+    .mobile-menu a {
+        padding: 18px 30px;
+        font-size: 15px;
+        border-bottom: 1px solid var(--border);
     }
 
     /* Hero section for tablets */
