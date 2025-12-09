@@ -131,7 +131,7 @@ header {
     font-family: 'DM Sans', sans-serif;
     font-size: 11px;
     font-weight: 500;
-    color: var(--text-light);
+    color: var(--red-accent);
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -306,6 +306,15 @@ nav > a.active,
 }
 
 /* ==========================================
+   TEXT UTILITIES
+   ========================================== */
+
+.text-accent {
+    color: var(--red-accent);
+    font-weight: 600;
+}
+
+/* ==========================================
    BUTTONS
    ========================================== */
 
@@ -327,14 +336,14 @@ nav > a.active,
 }
 
 .btn-primary {
-    background: var(--accent);
+    background: var(--red-accent);
     color: white;
 }
 
 .btn-primary:hover {
-    background: var(--accent-hover);
+    background: var(--red-accent-dark);
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(212, 165, 116, 0.35);
+    box-shadow: 0 8px 25px rgba(168, 67, 76, 0.35);
 }
 
 .btn-secondary {
