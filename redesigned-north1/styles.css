@@ -452,6 +452,8 @@ nav > a.active,
     font-size: clamp(40px, 5vw, 58px);
     margin-bottom: 25px;
     animation: fadeInUp 0.8s ease 0.1s both;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .hero p {
@@ -855,7 +857,7 @@ section {
 
 .partner-badge {
     display: inline-block;
-    background: var(--primary);
+    background: #A54356;
     color: white;
     padding: 6px 16px;
     border-radius: 50px;
@@ -1611,7 +1613,7 @@ section {
    ========================================== */
 
 footer {
-    background: var(--primary-dark);
+    background: linear-gradient(135deg, #8b293e 0%, #6d1f30 100%);
     color: white;
     padding: 80px 0 30px;
 }
@@ -1625,13 +1627,13 @@ footer {
 
 .footer-brand .logo {
     margin-bottom: 20px;
-    height: 40px;
+    height: 60px;
 }
 
 .footer-brand .logo img {
     height: 100%;
     width: auto;
-    max-height: 40px;
+    max-height: 60px;
     filter: brightness(0) invert(1); /* Makes logo white for dark footer */
 }
 
@@ -2292,7 +2294,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(26, 77, 92, 0.75) 0%, rgba(15, 53, 64, 0.70) 100%);
+    background: linear-gradient(180deg, rgba(26, 74, 94, 0.90) 0%, rgba(15, 56, 72, 0.85) 70%, rgba(56, 46, 58, 0.85) 100%);
 }
 
 /* Ensure hero content is above background */

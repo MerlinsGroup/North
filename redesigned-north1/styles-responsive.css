@@ -231,12 +231,12 @@ select {
     }
 
     .logo {
-        height: 35px;
+        height: 45px;
     }
 
     .logo img {
         height: 100%;
-        max-height: 35px;
+        max-height: 45px;
     }
 
     .hero h1 {
