@@ -621,22 +621,6 @@ select {
     .btn:focus {
         box-shadow: 0 0 0 3px rgba(212, 165, 116, 0.5);
     }
-
-    /* Skip to content link for screen readers */
-    .skip-to-content {
-        position: absolute;
-        top: -40px;
-        left: 0;
-        background: var(--primary);
-        color: white;
-        padding: 8px;
-        text-decoration: none;
-        z-index: 100;
-    }
-
-    .skip-to-content:focus {
-        top: 0;
-    }
 }
 
 /* ==========================================

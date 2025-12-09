@@ -344,19 +344,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // ACCESSIBILITY IMPROVEMENTS
     // ==========================================
 
-    // Add skip to content link
-    const skipLink = document.createElement('a');
-    skipLink.href = '#main-content';
-    skipLink.className = 'skip-to-content';
-    skipLink.textContent = 'Skip to main content';
-    document.body.insertBefore(skipLink, document.body.firstChild);
-
-    // Ensure main content has ID
-    const mainContent = document.querySelector('.hero, main, section');
-    if (mainContent && !mainContent.id) {
-        mainContent.id = 'main-content';
-    }
-
     // Add ARIA labels
     if (menuBtn) {
         menuBtn.setAttribute('aria-label', 'Toggle navigation menu');
