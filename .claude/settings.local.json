@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(start index.html)",
+      "Bash(explorer:*)",
+      "Bash(dir \"c:\\Users\\MSI-PC\\Documents\\GitHub\\North\\redesigned-north1\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
