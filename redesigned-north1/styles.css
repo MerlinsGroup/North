@@ -111,7 +111,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 75px;
+    height: 90px;
     position: relative;
 }
 
@@ -119,7 +119,7 @@ header {
 .logo {
     text-decoration: none;
     display: inline-block;
-    height: 45px;
+    height: 70px;
     flex-shrink: 0;
 }
 
@@ -128,7 +128,7 @@ header {
     width: auto;
     display: block;
     object-fit: contain;
-    max-height: 45px;
+    max-height: 70px;
 }
 
 /* Legacy logo text styles (keeping for backwards compatibility) */
@@ -1791,7 +1791,11 @@ footer {
     /* Header adjustments for tablets - with hamburger menu */
     .header-content {
         padding: 0 30px;
-        height: 70px;
+        height: 80px;
+    }
+
+    .logo {
+        height: 60px;
     }
 
     /* Hide desktop navigation on tablets */
