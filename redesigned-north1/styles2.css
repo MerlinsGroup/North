@@ -661,7 +661,7 @@ nav a:hover {
 
 /* Footer */
 footer {
-    background: var(--primary-dark);
+    background: linear-gradient(135deg, #8b293e 0%, #6d1f30 100%);
     color: white;
     padding: 60px 0 30px;
 }
@@ -671,6 +671,18 @@ footer {
     grid-template-columns: 2fr 1fr 1fr 1.5fr;
     gap: 60px;
     margin-bottom: 40px;
+}
+
+.footer-brand .logo {
+    margin-bottom: 20px;
+    height: 60px;
+}
+
+.footer-brand .logo img {
+    height: 100%;
+    width: auto;
+    max-height: 60px;
+    filter: brightness(0) invert(1);
 }
 
 .footer-brand p {
