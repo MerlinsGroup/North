@@ -270,8 +270,6 @@ nav a:hover {
     min-height: 600px;
     max-height: 800px;
     overflow: hidden;
-    padding: 0 !important;
-    margin: 0;
 }
 
 .hero-image-container {
@@ -354,8 +352,8 @@ nav a:hover {
 
 /* Image Gallery Grid */
 .image-gallery {
-    padding: 0 !important;
-    margin: 0;
+    padding: 100px 0;
+    background: var(--cream);
 }
 
 .gallery-grid {
@@ -904,17 +902,6 @@ footer {
         padding: 80px 0;
     }
 
-    /* Override for hero and gallery */
-    section.hero-clear {
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-
-    section.image-gallery {
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-
     .section-header h2 {
         font-size: 36px;
     }
@@ -1049,8 +1036,6 @@ footer {
         height: 100vh;
         min-height: 500px;
         max-height: none;
-        padding: 0 !important;
-        margin: 0 !important;
     }
 
     .hero-text-overlay {
@@ -1437,19 +1422,4 @@ footer {
         padding: 10px 20px;
         font-size: 14px;
     }
-}
-
-/* CRITICAL: Remove all white space from hero and image gallery sections */
-.hero-clear,
-section.hero-clear,
-.image-gallery,
-section.image-gallery {
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-/* Ensure no gap after header */
-header + *,
-.top-bar + header + * {
-    margin-top: 0 !important;
 }
