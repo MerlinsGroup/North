@@ -3,7 +3,9 @@
     "allow": [
       "Bash(start index.html)",
       "Bash(explorer:*)",
-      "Bash(dir \"c:\\Users\\MSI-PC\\Documents\\GitHub\\North\\redesigned-north1\")"
+      "Bash(dir \"c:\\Users\\MSI-PC\\Documents\\GitHub\\North\\redesigned-north1\")",
+      "Bash(for file in c:/Users/MSI-PC/Documents/GitHub/North/redesigned-north1/*.html)",
+      "Bash(done)"
     ],
     "deny": [],
     "ask": []

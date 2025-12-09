@@ -227,6 +227,7 @@ nav > a.active,
     max-height: calc(100vh - 90px);
     overflow-y: auto;
     animation: slideDown 0.3s ease;
+    z-index: 999;
 }
 
 .mobile-menu.active {
