@@ -285,11 +285,17 @@ nav > a.active,
     cursor: pointer;
     padding: 10px;
     color: var(--text-dark);
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.mobile-menu-btn:hover {
+    background: var(--cream);
 }
 
 .mobile-menu-btn.active {
     transform: rotate(90deg);
+    background: var(--cream);
 }
 
 @keyframes slideDown {
