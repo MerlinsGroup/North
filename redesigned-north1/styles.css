@@ -6,8 +6,8 @@
     --primary: #1a4d5c;
     --primary-dark: #0f3540;
     --primary-light: #2a6b7c;
-    --accent: #d4a574;
-    --accent-hover: #c4955a;
+    --accent: #A54356;
+    --accent-hover: #8B293E;
     --red-accent: #a8434c;
     --red-accent-dark: #8e3841;
     --red-accent-light: #c2525c;
@@ -2339,7 +2339,7 @@ footer {
     height: 100%;
     object-fit: cover;
     transition: all 0.5s ease;
-    filter: brightness(0.85);
+    filter: brightness(1);
 }
 
 .showcase-overlay {
@@ -2348,29 +2348,32 @@ footer {
     left: 0;
     right: 0;
     padding: 30px;
-    background: linear-gradient(to top, rgba(26, 77, 92, 0.95), transparent);
+    background: linear-gradient(to top, rgba(26, 77, 92, 0.90), rgba(26, 77, 92, 0.3));
     color: white;
-    transform: translateY(100%);
+    transform: translateY(0);
     transition: all 0.3s ease;
 }
 
 .showcase-item:hover img {
     transform: scale(1.1);
-    filter: brightness(1) contrast(1.1);
+    filter: brightness(1.1) contrast(1.05) saturate(1.1);
 }
 
 .showcase-item:hover .showcase-overlay {
-    transform: translateY(0);
-    background: linear-gradient(to top, rgba(165, 67, 86, 0.95), transparent);
+    background: linear-gradient(to top, rgba(165, 67, 86, 0.95), rgba(165, 67, 86, 0.3));
+    padding: 35px;
 }
 
 .showcase-overlay h3 {
-    font-size: 22px;
-    margin-bottom: 5px;
+    font-size: 24px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .showcase-overlay p {
-    font-size: 14px;
+    font-size: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     opacity: 0.9;
 }
 
